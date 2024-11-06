@@ -1,5 +1,5 @@
 @import "Normalizw";
-/*
+
 @font-face {
   font-family: 'Inter18pt-Bold';
   src: url('../assets/fonts/Inter18pt-Bold.woff2') format('woff2');
@@ -317,6 +317,7 @@ header {
   @include AlignmentOfBlock(0, 575px, flex, stretch);
   gap: 40px;
   margin-top: 28px;
+
   .container-next-list {
     margin-top: 28px;
 
@@ -330,4 +331,356 @@ header {
     }
   }
 }
-*/
+
+/*
+.Container__services {
+  @include AlignmentOfBlock(auto, 1440px, block, stretch);
+  padding: 140px 0 0 0;
+  background: #ffb342;
+
+  .Container__services-block {
+    @include AlignmentOfBlock(auto !important, 1200px, block, stretch);
+    text-align: center;
+    margin: 140px 0 38px 0;
+
+    .Container__services-titles {
+      @include parameters(400, 1.125rem, 170%, 0.02em);
+      text-transform: capitalize;
+      font-family: "Inter18pt-Regular", sans-serif;
+      display: inline-block;
+      background: #f4f4f4;
+      padding: 0 20px 0 20px;
+      margin-bottom: 22px;
+
+      &::before {
+        content: "";
+        width: 23px;
+        height: 27px;
+        display: inline-block;
+        background-image: url("../assets/svg/offer.svg");
+        position: relative;
+        top: 6px;
+        margin-right: 10px;
+      }
+
+      &--color {
+        color: $title-color;
+      }
+    }
+
+    .Container__services-title {
+      @include parameters(400, 2.81rem, 130%, 0.01em);
+      font-family: "Mulish-Regular", sans-serif;
+      margin-bottom: 12px;
+
+      &--color {
+        color: $title-color;
+      }
+    }
+
+    .Container__services-text {
+      @include parameters(400, 1.125rem, 150%, 0.02em);
+      font-family: "Inter18pt-Regular", sans-serif;
+
+      &--color {
+        color: $title-color;
+      }
+    }
+  }
+}
+
+.Container__services-options.ui-tabs {
+  margin: 38px 0 0 0;
+
+  .Container__services-list.ui-tabs {
+    @include AlignmentOfBlock(auto, 1200px, flex, space-between);
+
+    .ui-state-default.ui-state-active:first-of-type {
+      padding: 19px 46px 19px 0;
+      background: transparent;
+      .ui-tabs-anchor {
+        float: none;
+        padding: 0;
+        @include parameters(400, 1.25rem, 150%, 0.02em);
+        font-family: "Inter18pt-Regular", sans-serif;
+
+        &--color {
+          color: #222;
+        }
+
+        &::before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          display: inline-block;
+          position: relative;
+          background-image: url("../assets/svg/сommercial.svg");
+          position: relative;
+          top: 6px;
+          margin:0 10px 0 41px;
+        }
+      }
+    }
+
+
+    .ui-state-default.ui-state-active:nth-of-type(2) {
+      padding: 19px 46px 19px 0;
+      background: transparent;
+      .ui-tabs-anchor {
+        float: none;
+        padding: 0;
+        @include parameters(400, 1.25rem, 150%, 0.02em);
+        font-family: "Inter18pt-Regular", sans-serif;
+
+        &--color {
+          color: #222;
+        }
+
+        &::before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          display: inline-block;
+          position: relative;
+          background-image: url("../assets/svg/residential.svg");
+          position: relative;
+          top: 6px;
+          margin:0 10px 0 49px;
+        }
+      }
+    }
+
+    .ui-state-default.ui-state-active:nth-of-type(3) {
+      padding: 19px 46px 19px 0;
+      background: transparent;
+      .ui-tabs-anchor {
+        float: none;
+        padding: 0;
+        @include parameters(400, 1.25rem, 150%, 0.02em);
+        font-family: "Inter18pt-Regular", sans-serif;
+
+        &--color {
+          color: #222;
+        }
+
+        &::before {
+          content: "";
+          width: 36px;
+          height: 36px;
+          display: inline-block;
+          position: relative;
+          background-image: url("../assets/svg/industrial.svg");
+          position: relative;
+          top: 6px;
+          margin:0 10px 0 41px;
+        }
+      }
+    }
+  }
+
+}
+
+.Container__services-slide.ui-tabs-panel{
+  @include AlignmentOfBlock(auto, 1160px, flex, space-between);
+}
+
+ */
+.SectionThree-MainContainer {
+  @include AlignmentOfBlock(auto, 1440px, flex, stretch);
+  flex-direction: column;
+  align-items: center;
+  background: #ffb342;
+
+  .SectionThree-MainContainer-Menu1 {
+    max-width: 840px;
+    margin: 150px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    p:first-of-type {
+      @include parameters(400, 18px, 150%, 0.02em);
+      text-transform: capitalize;
+      margin: 10px 0 22px 0;
+      max-width: 206px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px 0 29px;
+
+      &::before {
+        margin: 0 10px 0 0;
+        content: "";
+        width: 23px;
+        height: 29px;
+        background-image: url("../assets/svg/offer.svg");
+        display: inline-block;
+      }
+    }
+
+    p:last-of-type {
+      @include parameters(400, 18px, 150%, 0.02em);
+      text-transform: capitalize;
+      text-align: center;
+      margin: 10px 0 22px 0;
+    }
+
+    h2 {
+      @include parameters(400, 45px, 130%, 0.01em);
+      text-align: center;
+    }
+  }
+}
+
+
+.ui-tabs.ui-widget-content {
+  padding: 0;
+  border: 0;
+
+  .ui-tabs-panel {
+    display: flex;
+    padding-right: 60px;
+    padding-top: 0;
+    transition: transform 0.3s ease, flex 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .ui-tabs-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #ffb342;
+    padding: 0 0 40px 0;
+    overflow: hidden;
+
+  }
+
+  .ui-widget-header {
+    border: 0;
+  }
+
+  .ui-corner-top {
+    border: 1px solid #1c2752;
+    float: none;
+    font-size: 0;
+
+    background: #ffb342;
+
+    .ui-tabs-anchor {
+      display: flex;
+      justify-content: center;
+      padding: 19px 46px;
+      float: none;
+      @include parameters(400, 20px, 150%, 0.02em);
+
+      &::before {
+        content: "";
+        width: 36px;
+        height: 36px;
+        background-image: url("../assets/svg/сommercial.svg");
+        display: inline-block;
+        margin: -5px 10px 0 0;
+      }
+    }
+  }
+
+  .ui-state-focus {
+    border: 1px solid #fff;
+    background: #fff;
+  }
+}
+
+.ui-widget-content {
+  background: none;
+}
+
+.SectionThree-MainContainer-Menu2-List-Inner {
+  max-width: 1160px;
+  background: white !important;
+  position: relative;
+  top: 80px;
+
+  .ImageDiv {
+    max-width: 416px;
+
+    .SectionThree-MainContainer-Menu2-Inner-List-Image3 {
+      width: 100%;
+      margin: 50px 0 0 0;
+      height: 355px;
+    }
+
+    .SectionThree-MainContainer-Menu2-Inner-List-Image1 {
+      width: 100%;
+      margin: 50px 0 0 0;
+      height: 366px;
+    }
+
+    .SectionThree-MainContainer-Menu2-Inner-List-Image {
+      width: 100%;
+      margin: 50px 0 0 0;
+      height: 366px;
+
+    }
+  }
+
+  .SectionThree-MainContainer-Menu2-Inner-List {
+    max-width: 624px;
+    padding: 0;
+    margin: 50px 20px 60px 20px;
+    display: inline-block;
+
+
+    .SectionThree-MainContainer-Menu2-Inner-List-item1 {
+      @include parameters(400, 17px, 159%, 0.02em);
+      text-transform: capitalize;
+      display: inline-block;
+      background: #f4f4f4;
+      padding: 0 28px 0 20px;
+      margin-bottom: 22px;
+
+      &::before {
+        content: "";
+        width: 28px;
+        height: 28px;
+        background-image: url("../assets/svg/ElectricalInstalation.svg");
+        display: inline-block;
+        position: relative;
+        margin: 0 10px 0 0;
+        top: 5px;
+      }
+    }
+
+    h2 {
+      @include parameters(400, 45px, 130%, 0.01em);
+      margin-bottom: 12px;
+    }
+
+    p:nth-of-type(2) {
+      @include parameters(400, 18px, 150%, 0.02em);
+      margin-bottom: 10px;
+      max-width: 504px;
+    }
+
+    p:nth-of-type(3) {
+      @include parameters(400, 18px, 150%, 0.02em);
+      margin-bottom: 30px;
+      max-width: 504px;
+    }
+
+    a {
+      @include parameters(400, 20px, 150%, 0.02em);
+      padding: 19px 42px;
+      background: #ffb342;
+      text-decoration: none;
+
+      &:hover {
+        background: white;
+      }
+    }
+  }
+}
