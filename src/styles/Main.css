@@ -1422,6 +1422,7 @@ header {
   max-width: 1200px;
   display: block;
   justify-content: stretch;
+  padding: 0 0 140px 0;
 }
 .price-plan .price-plan__header {
   display: flex;
@@ -1615,6 +1616,71 @@ header {
 }
 .price-plan__additional .info .additional-paragraph--color {
   color: #7e7e7e;
+}
+
+.registration {
+  padding: 141px 0 52px 0;
+  margin: auto;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  background: #ffb342;
+}
+.registration .registration__block {
+  max-width: 1200px;
+  display: block;
+}
+.registration .registration__block .registration__title {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  font-family: "Mulish-Regular", sans-serif;
+  margin: 0 0 9px 0;
+}
+.registration .registration__block .registration__title.registration--color {
+  color: #1c2752;
+}
+.registration .registration__block .registration__text {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  font-family: "Inter18pt-Regular", sans-serif;
+}
+.registration .registration__block .registration__text.text-colors {
+  color: #1c2752;
+}
+.registration .registration__form {
+  max-width: 570px;
+  width: 100%;
+}
+.registration .registration__form .registration__input {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  font-family: "Inter18pt-Regular", sans-serif;
+  width: 70%;
+  max-height: 68px;
+  background: #ffb342;
+  border: 1px solid #ffffff;
+  padding-left: 25px;
+}
+.registration .registration__form .registration__form-text {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  padding: 18px 46px;
+}
+.registration .registration__form .registration__form-text.form-text--color {
+  color: #1c2752;
+  background: #fff;
+}
+
+.form__block {
+  display: flex;
 }
 
 /*# sourceMappingURL=Main.css.map */

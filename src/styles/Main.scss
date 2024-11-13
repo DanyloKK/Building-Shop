@@ -1394,6 +1394,7 @@ header {
 
 .price-plan {
   @include AlignmentOfBlock(auto, 1200px, block, stretch);
+  padding: 0 0 140px 0;
 
   .price-plan__header {
     display: flex;
@@ -1563,7 +1564,7 @@ header {
         display: inline-block;
         margin: 0 12px 0 0;
         position: relative;
-        top:9px;
+        top: 9px;
         background-image: url("../assets/svg/true_icon.svg");
       }
     }
@@ -1580,4 +1581,64 @@ header {
       }
     }
   }
+}
+
+.registration {
+  padding: 141px 0 52px 0;
+  @include AlignmentOfBlock(auto, 1440px, flex, space-around);
+  background: #ffb342;
+
+  .registration__block {
+    max-width: 1200px;
+    display: block;
+
+    .registration__title {
+      @include parameters(400, 2rem, 140%, 0.01em);
+      font-family: "Mulish-Regular", sans-serif;
+      margin: 0 0 9px 0;
+
+      &.registration--color {
+        color: $title-color;
+      }
+    }
+
+    .registration__text {
+      @include parameters(400, 1.125rem, 150%, 0.02em);
+      font-family: "Inter18pt-Regular", sans-serif;
+
+      &.text-colors {
+        color: $title-color;
+      }
+    }
+  }
+
+  .registration__form {
+    max-width: 570px;
+    width: 100%;
+
+
+    .registration__input {
+      @include parameters(400, 1.0625rem, 159%, 0.02em);
+      font-family: "Inter18pt-Regular", sans-serif;
+      width: 70%;
+      max-height: 68px;
+      background: #ffb342;
+      border: 1px solid #ffffff;
+      padding-left: 25px;
+    }
+
+    .registration__form-text {
+      @include parameters(400, 1.0625rem, 159%, 0.02em);
+      padding: 18px 46px;
+
+      &.form-text--color {
+        color: $title-color;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.form__block {
+  display: flex;
 }
