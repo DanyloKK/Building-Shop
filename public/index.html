@@ -12,7 +12,15 @@
     <link rel="stylesheet" href="../src/styles/Main.css">
 </head>
 <body>
-
+<div id="loader">
+    <div class="loader">
+        <div class="crane">
+            <div class="crane-arm"></div>
+            <div class="crane-cable"></div>
+            <div class="crane-block"></div>
+        </div>
+    </div>
+</div>
 <div class="header-top">
     <p class="header-top__opening-hours">Opening Hours: 06:00 to 20:00</p>
     <ul class="header-top__menu-list">
@@ -307,46 +315,254 @@
     <section>
         <div class="container__choose">
             <div class="container__choose-image">
-                <ul class="container__choose-list">
-                    <li class="container__choose-item">
-                        <span>3956</span>
+                <img src="../src/assets/img/ReasonImage.png" alt="ReasonImage">
+                <ul class="container__choose-list container__choose-list--style">
+                    <li class="container__choose-item color">
+                        <span class="color">3956</span>
                         Project Done
                     </li>
-                    <li class="container__choose-item">
-                        <span>854</span>
+                    <li class="container__choose-item color">
+                        <span class="color">854</span>
                         People Working
                     </li>
-                    <li class="container__choose-item">
-                        <span>265</span>
+                    <li class="container__choose-item color">
+                        <span class="color">265</span>
                         Business Partners
                     </li>
-                    <li class="container__choose-item">
-                        <span>845+</span>
+                    <li class="container__choose-item color">
+                        <span class="color">845+</span>
                         Happy Customers
                     </li>
                 </ul>
+
             </div>
 
             <div class="container__choose-desc">
                 <div class="container__choose-up">
-                    <h4>Why Choose Us</h4>
-                    <h3>Few Reasons Why You Should Choose Us</h3>
-                    <p>We are offering the following information's about us that what we actually do in the electrical
+                    <h4 class="container__choose-title color">Why Choose Us</h4>
+                    <h3 class="container__choose-titles color">Few Reasons Why You Should Choose Us</h3>
+                    <p class=" container__choose-up-paragraph color">We are offering the following information's about
+                        us that what we actually do in the electrical
                         sector. To Improve our customers’ lives by providing creative and cost-effective solutions to
                         their needs.</p>
                 </div>
                 <div class="container__choose-down">
-                    <a>35 Years Experience</a>
-                    <p>Effective communication is the key to success for<br> any business. From our office staff, to our
+                    <a class="container__choose-element color">35 Years Experience</a>
+                    <p class="container__choose-paragraph color">Effective communication is the key to success for<br>
+                        any business. From our office staff, to our
                         field.</p>
-                    <a>Excellence Certificate</a>
-                    <p> We understand fully that your time is of extreme<br> value. We are committed to meeting
+                    <a class="container__choose-element color"> Excellence Certificate</a>
+                    <p class="container__choose-paragraph color"> We understand fully that your time is of extreme<br>
+                        value. We are committed to meeting
                         deadlines.</p>
-                    <a>Affordable Price</a>
-                    <p>We adhere strictly to the current National Electrical<br> Code, and we conduct regular in-house
+                    <a class="container__choose-element color">Affordable Price</a>
+                    <p class="container__choose-paragraph color">We adhere strictly to the current National
+                        Electrical<br> Code, and we conduct regular in-house
                         sessions.</p>
                 </div>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="container__projects">
+            <div class="container__projects__menu-title">
+                <p class="menu-title__text color">The Gallery</p>
+                <h2 class="menu-title__heading color">Our Recent Projects</h2>
+            </div>
+
+            <div class="container__projects__menu">
+                <figure class="menu__item menu__item--color">
+                    <img loading="lazy" src="../src/assets/img/Fiber.png" alt="CommercialImage" class="menu__image">
+                    <h3 class="menu__title">Fiber cable change</h3>
+                    <figcaption class="menu__caption menu__caption--color">Commercial</figcaption>
+                </figure>
+
+                <figure class="menu__item menu__item--color">
+                    <img loading="lazy" src="../src/assets/img/Industy.png" alt="Industry" class="menu__image">
+                    <h3 class="menu__title">Industry machine issue</h3>
+                    <figcaption class="menu__caption menu__caption--color">Industry</figcaption>
+                </figure>
+
+                <figure class="menu__item menu__item--color">
+                    <img loading="lazy" src="../src/assets/img/Wheel_Alloy.png" alt="WheelAlloy" class="menu__image">
+                    <h3 class="menu__title">Wheel Alloy Change</h3>
+                    <figcaption class="menu__caption menu__caption--color">Residential</figcaption>
+                </figure>
+
+                <figure class="menu__item menu__item--color">
+                    <img loading="lazy" src="../src/assets/img/Roof_Cleaning.png" alt="RoofCleaning"
+                         class="menu__image">
+                    <h3 class="menu__title">Roof Cleaning</h3>
+                    <figcaption class="menu__caption menu__caption--color">Commercial</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="SectionSeven">
+        <div class="container__testimonial">
+            <div class="container__testimonial-block">
+                <p class="container__testimonial-text">Testimonial</p>
+                <h4 class="container__testimonial-title">Customers Says</h4>
+                <div class="testimonial-carousel">
+                    <div class="testimonial active">
+                        <div class="testimonial-header">
+                            <img src="../src/assets/img/Nancy.png" alt="User photo" class="testimonial-photo">
+                            <div>
+                                <h3 class="testimonial-name">Nancy Luther</h3>
+                                <p class="testimonial-location">New York</p>
+                            </div>
+                            <div class="testimonial-quote-icon">“</div>
+                        </div>
+                        <p class="testimonial-text">
+                            We have had several good experiences with <strong>Blue Collar</strong> team. Most recently,
+                            they replaced our 20-year-old HVAC system with a new, <strong>modern, and more
+                            efficient</strong> system & it worked fine.
+                        </p>
+                    </div>
+
+                    <div class="carousel-controls">
+                        <button id="prev-btn" class="prev-btn">&#9664;</button>
+                        <button id="next-btn" class="next-btn">&#9654;</button>
+                    </div>
+                </div>
+                <div class="container__testimonial-contact">
+                    <div class="container__testimonial-contact-block">
+                        <p class="contact-text">Any Question</p>
+                        <h4 class="contact-title">99.9% Customer Satisfaction Based</h4>
+                        <p class="contact-text2">If you have any questions or need help contact with<br> our team, or
+                            call
+                        </p>
+                    </div>
+                    <div class="container__testimonial-contact-phone">
+                        <span class="container__testimonial-contact-number">(003) 123 456 7890</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container__testimonial-form">
+                <p class="form-text">Meet Us</p>
+                <h4 class="form-title">Appointment Form</h4>
+                <form class="container__testimonial-menu" method="post" action="" name="Data_Submit">
+                    <div class="menu-input1">
+                        <input class="input1" id="NameInput" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="menu-input2">
+                        <input class="input2" id="EmailInput" type="email" placeholder="Your Email">
+                    </div>
+                    <div class="menu-input3">
+                        <input class="input3" id="NumberInput" type="text" placeholder="Your Number">
+                    </div>
+                    <div class="menu-input4">
+                        <input class="input4" id="DateInput" type="text" placeholder="Date">
+
+                    </div>
+                    <div class="TextArea">
+                 <textarea class="ServiceDescription" placeholder="Service Description" title="Insert your comment">
+                 </textarea>
+                    </div>
+                    <button class="SubmitButton" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="price-plan">
+        <div class="price-plan__container">
+            <div class="price-plan__header">
+                <div class="price-plan__header-left">
+                    <h4 class="price-plan__title title--color">Price Plan</h4>
+                    <h3 class="price-plan__subtitle subtitle--color">Let’s Customize Work<br> With Affordable Price</h3>
+                </div>
+                <p class="price-plan__description desc--color">
+                    This is passionate about delivering growth and the new possibilities in the field of electrical
+                    services.
+                    We have extensive experience of domestic and business electrical installations, and no job is too
+                    small.
+                </p>
+            </div>
+
+            <div class="price-plan__content">
+                <article class="price-plan__item">
+                    <div class="price-plan__item-header">
+                        <h4 class="price-plan__item-title price-plan__item-title--color">Basic Plan</h4>
+                        <p class="price-plan__item-price price-plan__item-price--color">$ 599.00</p>
+                        <span class="price-plan__item-type price-plan__item-type--color">Per Visit Charge</span>
+                    </div>
+                    <ul class="price-plan__features">
+                        <li class="price-plan__feature price--color">Electrical Service</li>
+                        <li class="price-plan__feature price--color">Distribution Power Systems</li>
+                        <li class="price-plan__feature price--color">High & Medium Voltages</li>
+                        <li class="price-plan__feature price--color">Industrial Control Systems</li>
+                        <li class="price-plan__feature price--color">Switch Installation</li>
+                        <li class="price-plan__feature price--color">Generator Installations</li>
+                        <li class="price-plan__feature price--color price-plan__feature--last">Innovative Construction
+                        </li>
+                    </ul>
+                    <a href="#" class="price-plan__link">Buy Now</a>
+                </article>
+
+                <article class="price-plan__item">
+                    <div class="price-plan__item-header">
+                        <h4 class="price-plan__item-title">Standard Plan</h4>
+                        <p class="price-plan__item-price">$ 999.00</p>
+                        <span class="price-plan__item-type">Per Visit Charge</span>
+                    </div>
+                    <ul class="price-plan__features">
+                        <li class="price-plan__feature">Advanced Electrical Service</li>
+                        <li class="price-plan__feature">Full Distribution Power Systems</li>
+                        <li class="price-plan__feature">High & Medium Voltage Solutions</li>
+                        <li class="price-plan__feature">Complete Control Systems</li>
+                        <li class="price-plan__feature">Professional Switch Installation</li>
+                        <li class="price-plan__feature">Comprehensive Generator Installation</li>
+                        <li class="price-plan__feature price-plan__feature--last">Innovative & Sustainable Solutions
+                        </li>
+                    </ul>
+                    <a href="#" class="price-plan__link">Buy Now</a>
+                </article>
+                <article class="price-plan__item">
+                    <div class="price-plan__item-header">
+                        <h4 class="price-plan__item-title">Standard Plan</h4>
+                        <p class="price-plan__item-price">$ 999.00</p>
+                        <span class="price-plan__item-type">Per Visit Charge</span>
+                    </div>
+                    <ul class="price-plan__features">
+                        <li class="price-plan__feature">Advanced Electrical Service</li>
+                        <li class="price-plan__feature">Full Distribution Power Systems</li>
+                        <li class="price-plan__feature">High & Medium Voltage Solutions</li>
+                        <li class="price-plan__feature">Complete Control Systems</li>
+                        <li class="price-plan__feature">Professional Switch Installation</li>
+                        <li class="price-plan__feature">Comprehensive Generator Installation</li>
+                        <li class="price-plan__feature price-plan__feature--last">Innovative & Sustainable Solutions
+                        </li>
+                    </ul>
+                    <a href="#" class="price-plan__link">Buy Now</a>
+                </article>
+            </div>
+            <div class="price-plan__additional">
+                <div class="info">
+                    <span class="additional additional--color">Affordable Price</span>
+                    <p class="additional-paragraph additional-paragraph--color">We adhere strictly to the current
+                        National Electrical Code,<br> and we conduct regular in-house
+                        sessions with our<br> technicians to review any code changes and applications.</p>
+                </div>
+                <div class="info">
+                    <span class="additional additional--color">Fixed Plan</span>
+                    <p class="additional-paragraph additional-paragraph--color">We understand fully that your time is of
+                        extreme value. You will<br> never have to worry about
+                        waiting around for our trained<br> technicians.24/7 Service Providers Affordable Price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <div>
+                <h4>Subscribe Our Newsletter</h4>
+                <p>Stay in touch with us to get latest news. We are here to fit the needs of your electrical services
+                    for your dream building.</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Enter your email adress...">
+                <span></span>
+            </form>
         </div>
     </section>
 </main>
