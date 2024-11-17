@@ -1029,6 +1029,40 @@ header {
 
   .container__testimonial-block {
     max-width: 591px;
+
+    .container__testimonial-text {
+      @include parameters(400, 1.125rem, 150%, 0.02em);
+      text-transform: capitalize;
+      margin: 0 0 22px 0;
+      display: inline-block;
+      background: #f4f4f4;
+      font-family: "Inter18pt-Regular", sans-serif;
+
+      &::before {
+        content: "";
+        width: 22px;
+        height: 27px;
+        display: inline-block;
+        margin: 0 10px 0 0;
+        position: relative;
+        top: 5px;
+        background-image: url("../assets/svg/Why_Choose_Us.svg");
+      }
+
+      &.testimonial--color {
+        color: #1c2752;
+      }
+    }
+
+    .container__testimonial-title {
+      @include parameters(400, 2.81rem, 130%, 0.01em);
+      margin: 0 0 62px 0;
+      font-family: "Mulish-Regular", sans-serif;
+
+      &.testimonial__title--color {
+        color: #1C2752;
+      }
+    }
   }
 
   .SectionSeven-MainContainer-Menu1 {
@@ -1036,21 +1070,23 @@ header {
   }
 }
 
+.testimonial {
+  max-width: 591px;
+  border: 1px solid #ddd;
+  margin: 0 0 30px 0;
+}
 
 .testimonial-carousel {
   width: 100%;
-  max-width: 500px;
+
   margin: 0 auto;
-  border: 1px solid #ddd;
   padding: 20px;
-  border-radius: 10px;
   position: relative;
 }
 
 .testimonial-slide {
   display: none;
   flex-direction: column;
-  align-items: center;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -1060,37 +1096,73 @@ header {
 
 .testimonial-header {
   display: flex;
-  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 15px;
+  max-width: 509px;
+  width: 100%;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .user-image {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 5px 0 0 10px;
 }
 
 .user-info {
   flex-grow: 1;
+  margin: 0 0 0 20px;
+
+  h6 {
+    @include parameters(400, 1.375rem, 140%, 0.01em);
+    font-family: "Mulish-Regular", sans-serif;
+
+    &.h--color {
+      color: #1c2752;
+    }
+  }
+
+  small {
+    @include parameters(400, 1.175rem, 150%, 0.02em);
+    font-family: "Inter18pt-Regular", sans-serif;
+
+    &.sm-color {
+      color: #7e7e7e;
+    }
+  }
 }
 
 .quote-icon {
   font-size: 24px;
   color: #ff9800;
   font-weight: bold;
+  margin: 0 10px 0 0;
 }
 
 .testimonial-text {
-  text-align: center;
-  color: #555;
+  text-align: left;
+  max-width: 509px;
+  @include parameters(700, 1.175rem, 150%, 0.02em);
+  font-family: "Inter18pt-BoldItalic", sans-serif;
+
+  &--color {
+    color: #7e7e7e;
+  }
+
+  span {
+    color: #1c2752;
+  }
 }
 
 .carousel-controls {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 10px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+
 }
 
 .carousel-controls button {
@@ -1105,6 +1177,10 @@ header {
 
 .carousel-controls button:hover {
   background-color: #bbb;
+}
+
+.arrow-hide {
+  opacity: 0;
 }
 
 
@@ -1122,6 +1198,25 @@ header {
     max-width: 511px;
     padding: 10px 0 0 0;
     margin: 0 0 0 40px;
+
+
+    .container__testimonial-contact-number {
+      @include parameters(400, 30px, 150%, 0.01em);
+      color: #fff;
+      margin: 0 0 0 0;
+
+      &::before {
+        position: relative;
+        top: 15px;
+        margin: 0 20px 0 0;
+        content: "";
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        background-image: url("../assets/svg/Phone.svg");
+      }
+    }
+
 
     .contact-text {
       @include parameters(400, 18px, 180%, 0.02em);
@@ -1156,32 +1251,6 @@ header {
     }
   }
 }
-
-
-.container__testimonial-contact-phone2 {
-  .container__testimonial-contact-phone {
-    max-width: 511px;
-
-    .container__testimonial-contact-number {
-      @include parameters(400, 30px, 150%, 0.01em);
-      color: #fff;
-      margin: 0 0 0 40px;
-
-      &::before {
-        position: relative;
-        top: 15px;
-        margin: 0 20px 0 0;
-        content: "";
-        width: 50px;
-        height: 50px;
-        display: inline-block;
-        background-image: url("../assets/svg/Phone.svg");
-      }
-    }
-
-  }
-}
-
 
 .container__testimonial-form {
   max-width: 563px;
