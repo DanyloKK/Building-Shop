@@ -404,26 +404,58 @@
                 <p class="container__testimonial-text">Testimonial</p>
                 <h4 class="container__testimonial-title">Customers Says</h4>
                 <div class="testimonial-carousel">
-                    <div class="testimonial active">
+                    <div class="testimonial-slide active">
                         <div class="testimonial-header">
-                            <img src="../src/assets/img/Nancy.png" alt="User photo" class="testimonial-photo">
-                            <div>
-                                <h3 class="testimonial-name">Nancy Luther</h3>
-                                <p class="testimonial-location">New York</p>
+                            <img src="../src/assets/img/Nancy.png" alt="User Image" class="user-image">
+                            <div class="user-info">
+                                <h6>Nancy Luther</h6>
+                                <small>New York</small>
                             </div>
-                            <div class="testimonial-quote-icon">“</div>
+                            <div class="quote-icon">
+                                <span>“</span>
+                            </div>
                         </div>
                         <p class="testimonial-text">
-                            We have had several good experiences with <strong>Blue Collar</strong> team. Most recently,
-                            they replaced our 20-year-old HVAC system with a new, <strong>modern, and more
-                            efficient</strong> system & it worked fine.
+                            We have had several good experiences with <strong>Blue Collar</strong> team. Most recently, they replaced our 20-year-old HVAC system with a new,
+                            <strong>modern, and more efficient</strong> system & it worked fine.
                         </p>
                     </div>
 
-                    <div class="carousel-controls">
-                        <button id="prev-btn" class="prev-btn">&#9664;</button>
-                        <button id="next-btn" class="next-btn">&#9654;</button>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-header">
+                            <img src="../src/assets/img/Nancy.png" alt="User Image" class="user-image">
+                            <div class="user-info">
+                                <h6>John Doe</h6>
+                                <small>California</small>
+                            </div>
+                            <div class="quote-icon">
+                                <span>“</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Outstanding service! The team was quick and efficient, highly recommended!
+                        </p>
                     </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-header">
+                            <img src="../src/assets/img/Nancy.png" alt="User Image" class="user-image">
+                            <div class="user-info">
+                                <h6>Margaret Wick</h6>
+                                <small>Washington</small>
+                            </div>
+                            <div class="quote-icon">
+                                <span>“</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Outstanding service! The team was quick and efficient, highly recommended!
+                        </p>
+                    </div>
+
+                </div>
+                <div class="carousel-controls">
+                    <button id="prevBtn">&lt;</button>
+                    <button id="nextBtn">&gt;</button>
                 </div>
                 <div class="container__testimonial-contact">
                     <div class="container__testimonial-contact-block">
@@ -569,24 +601,32 @@
             </form>
         </div>
     </section>
-    <section>
+    <section class="section-contacts">
         <div class="contacts">
             <div class="contacts__info">
-                <img class="contacts__main-logo" src="../src/assets/img/Main_logo.png" alt="Main_Logo">
+                <div class="contacts__image">
+                    <img class="contacts__main-logo" src="../src/assets/img/White_Logo.png" alt="Main_Logo">
+                </div>
+
                 <div class="contacts__info-block">
                     <img src="../src/assets/img/MaillUs.png">
-                    <p class="contacts__text">Mail Us<span class="contacts__span">Info@bluecollar.com</span></p>
+                    <p class="contacts__text contacts__text--color">Mail Us<br><span class="contacts__span span--color">Info@bluecollar.com</span>
+                    </p>
                 </div>
                 <div class="contacts__info-block">
                     <img src="../src/assets/img/PhoneCall.png">
-                    <p class="contacts__text">Call Us<span class="contacts__span">+01 569 896 654</span></p>
+                    <p class="contacts__text contacts__text--color">Call Us<br><span class="contacts__span span--color">+01 569 896 654</span>
+                    </p>
                 </div>
                 <div class="contacts__info-block">
                     <img src="../src/assets/img/Frame.png">
-                    <p class="contacts__text">Location<span class="contacts__span">Amsterdam, 109-74</span></p>
+                    <p class="contacts__text contacts__text--color">Location<br><span
+                            class="contacts__span span--color">Amsterdam, 109-74</span></p>
                 </div>
             </div>
             <div class="contacts__lists">
+                <div class="line-vertical"></div>
+                <div class="line-vertical--two"></div>
                 <div class="contacts__lists-links">
                     <p class="contacts__lists-text">We are here to fit the needs of your basic services for your dream
                         building whether its a
@@ -594,59 +634,58 @@
                     <ul class="contacts__lists-list">
                         <li class="contacts__lists-item">
                             <a class="contacts__lists-link">
-                                <img>
+                                <img src="../src/assets/svg/contact_insta.svg">
                             </a>
                         </li>
                         <li class="contacts__lists-item">
                             <a class="contacts__lists-link">
-                                <img>
+                                <img src="../src/assets/svg/contact_facebook.svg">
                             </a>
                         </li>
                         <li class="contacts__lists-item">
                             <a class="contacts__lists-link">
-                                <img>
+                                <img src="../src/assets/svg/contact_twitter.svg">
                             </a>
                         </li>
                         <li class="contacts__lists-item">
                             <a class="contacts__lists-link">
-                                <img>
+                                <img src="../src/assets/svg/contact_linkidin.svg">
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="contacts__lists-items">
-                    <ul class="contacts__lists-items-list">
-                        <li class="contacts__lists-text item--color item--first">Explore</li>
-                        <li class="contacts__lists-text item--color">About Us</li>
-                        <li class="contacts__lists-text item--color">Pricing</li>
-                        <li class="contacts__lists-text item--color">Team</li>
-                        <li class="contacts__lists-text item--color">Blog</li>
-                        <li class="contacts__lists-text item--color">Contact Us</li>
-                    </ul>
-                    <ul class="contacts__lists-items-list">
-                        <li class="contacts__lists-text item--color item--first">Quick Links</li>
-                        <li class="contacts__lists-text item--color">Home</li>
-                        <li class="contacts__lists-text item--color">Services</li>
-                        <li class="contacts__lists-text item--color">Service Single</li>
-                        <li class="contacts__lists-text item--color">Projects</li>
-                        <li class="contacts__lists-text item--color">Projects Single</li>
-                    </ul>
-                    <ul class="contacts__lists-items-list">
-                        <li class="contacts__lists-text item--color item--first">Utility Pages</li>
-                        <li class="contacts__lists-text item--color">Style Guide</li>
-                        <li class="contacts__lists-text item--color">Changelog</li>
-                        <li class="contacts__lists-text item--color">Licenses</li>
-                        <li class="contacts__lists-text item--color">Protected Page</li>
-                        <li class="contacts__lists-text item--color">404 Page</li>
-                    </ul>
-                </div>
+                <ul class="contacts__item">
+                    <li class="contacts__lists-text item--color item--first">Explore</li>
+                    <li class="contacts__lists-text item--color">About Us</li>
+                    <li class="contacts__lists-text item--color">Pricing</li>
+                    <li class="contacts__lists-text item--color">Team</li>
+                    <li class="contacts__lists-text item--color">Blog</li>
+                    <li class="contacts__lists-text item--color">Contact Us</li>
+                </ul>
+                <ul class="contacts__item">
+                    <li class="contacts__lists-text item--color item--first">Quick Links</li>
+                    <li class="contacts__lists-text item--color">Home</li>
+                    <li class="contacts__lists-text item--color">Services</li>
+                    <li class="contacts__lists-text item--color">Service Single</li>
+                    <li class="contacts__lists-text item--color">Projects</li>
+                    <li class="contacts__lists-text item--color">Projects Single</li>
+                </ul>
+                <ul class="contacts__item">
+                    <li class="contacts__lists-text item--color item--first">Utility Pages</li>
+                    <li class="contacts__lists-text item--color">Style Guide</li>
+                    <li class="contacts__lists-text item--color">Changelog</li>
+                    <li class="contacts__lists-text item--color">Licenses</li>
+                    <li class="contacts__lists-text item--color">Protected Page</li>
+                    <li class="contacts__lists-text item--color">404 Page</li>
+                </ul>
+
             </div>
         </div>
     </section>
 </main>
-
 <script src="https://code.jquery.com/jquery-3.7.1.js" defer></script>
 <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js" defer></script>
+<script src="../scripts/Carousel.js"></script>
 <script src="../scripts/Tabs.js" defer></script>
 </body>
 </html>

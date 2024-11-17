@@ -1074,106 +1074,74 @@ header {
   max-width: 561px;
 }
 
-.container__testimonial .container__testimonial-text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #1c2752;
-  text-transform: capitalize;
-  margin: 0 0 22px 0;
-  display: inline-block;
-  background: #f4f4f4;
-  padding: 0 20px;
-}
-.container__testimonial .container__testimonial-text::before {
+.testimonial-carousel {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
   position: relative;
-  top: 5px;
-  content: "";
-  width: 22px;
-  height: 27px;
-  display: inline-block;
-  background-image: url("../assets/svg/Why_Choose_Us.svg");
-  margin: 0 10px 0 0;
-}
-.container__testimonial .container__testimonial-title {
-  font-weight: 400;
-  font-size: 45px;
-  line-height: 130%;
-  letter-spacing: 0.01em;
-  color: #1c2752;
-  text-transform: capitalize;
-  margin: 0 0 41px 0;
 }
 
-.container__testimonial-inside {
-  padding: 41px 60px 36px 41px;
-  border: 1px solid #e4e4e4;
-  margin: 0 0 40px 0;
-  transition: transform 0.3s ease, flex 0.3s ease;
+.testimonial-slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
-.container__testimonial-inside:hover {
-  transform: scale(1.1);
-}
-.container__testimonial-inside .carousel-block {
-  border-bottom: 1px solid #e4e4e4;
-  margin: 0 0 20px 0;
-}
-.container__testimonial-inside .carousel-block img {
-  width: 55px;
-  height: 55px;
-}
-.container__testimonial-inside .carousel-block-container {
-  padding: 0 0 21px 0;
-}
-.container__testimonial-inside .container-text {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 110%;
-  letter-spacing: 0.02em;
-  color: #1c2752;
-  display: inline-block;
-}
-.container__testimonial-inside .container-text span {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 120%;
-  letter-spacing: 0.02em;
-  color: #7e7e7e;
-}
-.container__testimonial-inside .carousel-block {
-  margin: 0;
-  max-width: 509px;
-  display: flex;
-  justify-content: space-between;
-}
-.container__testimonial-inside .carousel-block img {
-  margin: 0 25px 0 0;
-}
-.container__testimonial-inside .carousel-block .container__testimonial-inside-client {
+
+.testimonial-slide.active {
   display: flex;
 }
-.container__testimonial-inside .carousel-block .container__testimonial-inside-client p {
-  margin: 5px 0 0 10px;
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
-.container__testimonial-inside .carousel-quote blockquote {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: 0.02em;
-  color: #7e7e7e;
-  font-style: italic;
-  margin: 0 0 23px 0;
-}
-.container__testimonial-inside .carousel-quote blockquote span {
-  color: #1c2752;
-}
-.container__testimonial-inside a svg {
+
+.user-image {
   width: 50px;
   height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
-.container__testimonial-inside a path:hover {
-  fill: #ffb342;
+
+.user-info {
+  flex-grow: 1;
+}
+
+.quote-icon {
+  font-size: 24px;
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  text-align: center;
+  color: #555;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.carousel-controls button {
+  background-color: #ddd;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.carousel-controls button:hover {
+  background-color: #bbb;
 }
 
 .container__testimonial-contact {
@@ -1681,6 +1649,128 @@ header {
 
 .form__block {
   display: flex;
+}
+
+.contacts {
+  margin: auto;
+  max-width: 1440px;
+  display: block;
+  justify-content: stretch;
+  background: #1C2752;
+  padding: 59px 0 87px 0;
+}
+.contacts .contacts__info {
+  border-bottom: 1px solid #000;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contacts__info-block {
+  display: flex;
+  margin: 0 0 49px 0;
+}
+.contacts__info-block .contacts__text {
+  margin: 12px 0 0 15px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  font-family: "Mulish-Regular", sans-serif;
+}
+.contacts__info-block .contacts__text--color {
+  color: #fff;
+}
+.contacts__info-block .contacts__text .contacts__span {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 159%;
+  letter-spacing: 0.02em;
+  font-family: "Inter18pt-Regular", sans-serif;
+}
+.contacts__info-block .contacts__text .contacts__span.span--color {
+  color: #fff;
+}
+
+.contacts__image {
+  margin: 40px 0 0 0;
+}
+
+.contacts__lists {
+  position: relative;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #4b557d;
+}
+.contacts__lists .contacts__lists-links {
+  max-width: 401px;
+  margin: 120px 0 0 0;
+}
+.contacts__lists .contacts__lists-links .contacts__lists-text {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  font-family: "Inter18pt-Regular", sans-serif;
+  color: #ffffff;
+}
+.contacts__lists .contacts__lists-list {
+  display: flex;
+  gap: 15px;
+  margin: 50px 0 0 0;
+}
+.contacts__lists .contacts__lists-list .contacts__lists-item {
+  list-style: none;
+}
+
+.contacts__item {
+  margin: 50px 0 0 0;
+}
+.contacts__item .contacts__lists-text {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  font-family: "Inter18pt-Regular", sans-serif;
+  margin: 0 0 10px 0;
+  list-style: none;
+}
+.contacts__item .contacts__lists-text.item--color {
+  color: #fff;
+}
+.contacts__item .contacts__lists-text.item--first {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  font-family: "Mulish-Regular", sans-serif;
+}
+.contacts__item .contacts__lists-text.item--first.item--color {
+  color: #ffb342;
+}
+
+.line-vertical {
+  position: absolute;
+  width: 1px;
+  height: 223px;
+  transform: rotate(180deg);
+  background: #4b557d;
+  right: 220px;
+  top: 130px;
+}
+
+.line-vertical--two {
+  width: 1px;
+  height: 223px;
+  transform: rotate(180deg);
+  background: #4b557d;
+  position: absolute;
+  left: 440px;
+  top: 130px;
 }
 
 /*# sourceMappingURL=Main.css.map */
